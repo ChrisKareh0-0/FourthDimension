@@ -8,6 +8,7 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -38,7 +39,7 @@ export const Contact = () => {
 
       if (response.ok) {
         setSubmitStatus("success");
-        setFormData({ name: "", email: "", subject: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
       } else {
         setSubmitStatus("error");
       }
@@ -96,7 +97,7 @@ export const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-gray-300 text-sm font-medium mb-2">
-                  Name
+                  Name *
                 </label>
                 <input
                   type="text"
@@ -111,7 +112,7 @@ export const Contact = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block text-gray-300 text-sm font-medium mb-2">
-                  Email
+                  Email *
                 </label>
                 <input
                   type="email"
@@ -125,10 +126,26 @@ export const Contact = () => {
                 />
               </div>
             </div>
+
+            <div>
+              <label htmlFor="phone" className="block text-gray-300 text-sm font-medium mb-2">
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 bg-[rgba(3,0,20,0.5)] border border-[rgba(112,66,248,0.3)] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[rgba(112,66,248,0.6)] focus:ring-1 focus:ring-[rgba(112,66,248,0.3)] transition-all duration-300"
+                placeholder="+1 (555) 123-4567"
+              />
+            </div>
             
             <div>
               <label htmlFor="subject" className="block text-gray-300 text-sm font-medium mb-2">
-                Subject
+                Subject *
               </label>
               <input
                 type="text"
@@ -144,7 +161,7 @@ export const Contact = () => {
             
             <div>
               <label htmlFor="message" className="block text-gray-300 text-sm font-medium mb-2">
-                Message
+                Message *
               </label>
               <textarea
                 id="message"

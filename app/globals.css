@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
+/* Custom Font Declaration */
+@font-face {
+  font-family: 'Gloock';
+  src: url('/fonts/Gloock-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -159,7 +168,7 @@ html {
 }
 
 .card-info h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);

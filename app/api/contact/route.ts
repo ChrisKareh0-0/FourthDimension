@@ -5,10 +5,10 @@ const resend = new Resend('re_ZVX95fty_AWqKrRxE16yadeW3XTpQwNSu');
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, subject, message } = await request.json();
+    const { name, email, phone, subject, message } = await request.json();
 
     // Validate required fields
-    if (!name || !email || !subject || !message) {
+    if (!name || !email || !phone || !subject || !message) {
       return NextResponse.json(
         { error: 'All fields are required' },
         { status: 400 }
@@ -26,6 +26,7 @@ export async function POST(request: NextRequest) {
           <h3 style="color: #333; margin-top: 0;">Contact Details:</h3>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
           <p><strong>Subject:</strong> ${subject}</p>
         </div>
         

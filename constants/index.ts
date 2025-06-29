@@ -95,11 +95,11 @@ export const SOCIALS = [
     icon: RxInstagramLogo,
     link: "https://instagram.com",
   },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
+  // {
+  //   name: "Facebook",
+  //   icon: FaFacebook,
+  //   link: "https://facebook.com",
+  // },
   {
     name: "Twitter",
     icon: RxTwitterLogo,
@@ -311,11 +311,11 @@ export const FOOTER_DATA = [
         icon: RxInstagramLogo,
         link: "https://www.instagram.com/fourthdimensionagency",
       },
-      {
-        name: "Facebook",
-        icon: FaFacebook,
-        link: "https://facebook.com",
-      },
+      // {
+      //   name: "Facebook",
+      //   icon: FaFacebook,
+      //   link: "https://facebook.com",
+      // },
       {
         name: "LinkedIn",
         icon: RxLinkedinLogo,

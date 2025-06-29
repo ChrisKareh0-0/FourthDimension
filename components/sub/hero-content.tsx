@@ -41,16 +41,16 @@ export const HeroContent = () => {
             className="select-none"
           />
           <span>
-            Marketing{" "}
+            As Long as{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 relative inline-block">
               <div 
                 ref={textRef}
                 className="anim-text-flow"
               >
-                Beyond
+                Dreams
               </div>
             </span>{" "}
-            Time.
+            Inspire.
           </span>
         </motion.div>
 

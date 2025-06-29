@@ -60,6 +60,24 @@ const CARD_DATA = [
     }
   },
   {
+    icon: CardIcons.website,
+    title: "Development",
+    content: "Custom web and mobile applications built with cutting-edge technologies.",
+    iconColor: "#8A2BE2",
+    details: {
+      description: "Full-stack web and mobile development services using modern technologies to create scalable, high-performance applications that drive business growth and user engagement.",
+      features: [
+        "Custom website and web application development",
+        "Mobile app development (iOS & Android)",
+        "E-commerce platform development",
+        "API development and integration",
+        "Database design and optimization",
+        "Cloud deployment and maintenance"
+      ],
+      benefits: "Build robust, scalable digital solutions that streamline operations, enhance user experience, and provide measurable business value through custom software development."
+    }
+  },
+  {
     icon: CardIcons.photography,
     title: "Photography",
     content: "Professional photography services to showcase your products and brand story.",
